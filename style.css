@@ -1,0 +1,327 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100%;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+nav .menu a:hover {
+    color: #04c4dd;
+    border-bottom: 2px solid #04c4dd;
+}
+
+nav .busqueda {
+    display: flex;
+    align-items: center;
+}
+
+nav .busqueda input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+nav .busqueda button {
+    padding: 8px 12px;
+    background-color: #04c4dd;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav .busqueda button:hover {
+    background-color: #04c4dd;
+}
+
+.cartelera {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.divCarrousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    width: fit-content;
+}
+
+.carrousel {
+    justify-self: center;
+    width: 720px;
+    margin: 50px 0;
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.pelicula {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pelicula-imagen img {
+    width: 220px;
+    height: 300px;
+}
+
+.pelicula-titulo h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.controladorIzq {
+    z-index: 10;
+}
+
+.controladorDer {
+    z-index: 10;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer2 {
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footerContainer {
+    color: white;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-items: center;
+}
+
+.footerContainer img {
+    width: 24px;
+    height: 24px;
+}
+
+.footerContainer a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.divEnlacesotrasPaginas {
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.divEnlacesotrasPaginas h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.divEnlacesotrasPaginas div,
+.divEnlacesotrasPaginas a {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.divEnlacesotrasPaginas a:hover {
+    color: #04c4dd;
+    border-bottom: 2px solid #04c4dd;
+}
+
+.sobreNosotros {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.sobreNosotros h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobreNosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.sobreNosotros .team-photo {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.cartelera button {
+    width: 32px;
+}
+
+.Equipo {
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.Equipo h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.miembroDelEquipo {
+    margin-bottom: 30px;
+}
+
+.miembroDelEquipo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.miembroDelEquipo p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.video {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sobreNosotros img {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.divFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario {
+    border-radius: 5px;
+    padding: 10px;
+    color: #04c4dd;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    width: 500px;
+    margin: 60px 0px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    width: 200px;
+}
+
+
+textarea,
+input {
+    width: 100%;
+    resize: vertical;
+}
+
+.mensaje {
+    display: flex;
+    gap: 10px;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.direccion {
+    color: white;
+    background-color: #1c1c1c;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.direccion a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    color: #04c4dd;
+}
